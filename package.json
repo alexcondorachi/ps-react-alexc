@@ -36,6 +36,7 @@
     "react-dom": "^15.6.1",
     "react-error-overlay": "^1.0.10",
     "style-loader": "0.18.2",
+    "styled-components": "^1.4.5",
     "sw-precache-webpack-plugin": "0.11.4",
     "url-loader": "0.5.9",
     "webpack": "3.5.1",
@@ -44,11 +45,11 @@
     "whatwg-fetch": "2.0.3"
   },
   "scripts": {
-    "prestart":"npm run gen:docs",
+    "prestart": "npm run gen:docs",
     "start": "npm-run-all --parallel start:docs gen:docs-watch",
     "start:docs": "node scripts/start.js",
-    "gen:docs":"node scripts/generateComponentData.js",
-    "gen:docs-watch":"npm run gen:docs -- --watch",
+    "gen:docs": "node scripts/generateComponentData.js",
+    "gen:docs-watch": "npm run gen:docs -- --watch",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom"
   },
